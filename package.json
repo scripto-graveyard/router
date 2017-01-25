@@ -1,5 +1,5 @@
 {
-  "name": "router",
+  "name": "@scriptollc/router",
   "version": "0.0.0",
   "description": "Router for the showrunner front-end",
   "main": "router.js",
