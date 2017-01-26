@@ -18,13 +18,45 @@
   "bugs": {
     "url": "https://github.com/scriptoLLC/router/issues"
   },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "plugins": [
+            "transform-react-jsx",
+            "transform-es2015-destructuring",
+            "transform-object-rest-spread",
+            "check-es2015-constants",
+            "transform-es2015-arrow-functions",
+            "transform-es2015-block-scoping",
+            "transform-es2015-computed-properties",
+            "transform-es2015-parameters",
+            "transform-es2015-shorthand-properties",
+            "transform-es2015-spread",
+            "transform-es2015-template-literals"
+          ]
+        }
+      ]
+    ]
+  },
   "homepage": "https://github.com/scriptoLLC/router#readme",
   "dependencies": {
     "@scriptollc/base-components": "^1.13.0",
+    "babel-plugin-check-es2015-constants": "^6.8.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.8.0",
+    "babel-plugin-transform-es2015-block-scoping": "^6.15.0",
+    "babel-plugin-transform-es2015-computed-properties": "^6.8.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.16.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.14.0",
+    "babel-plugin-transform-es2015-parameters": "^6.17.0",
+    "babel-plugin-transform-es2015-shorthand-properties": "^6.8.0",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
+    "babel-plugin-transform-es2015-template-literals": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babelify": "^7.3.0",
     "lazy-render": "^0.0.0",
     "lazy-router": "^1.0.0"
-  },
-  "peerDependencies": {
-    "react": ""
   }
 }
